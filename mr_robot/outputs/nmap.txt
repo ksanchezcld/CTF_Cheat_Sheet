@@ -1,0 +1,48 @@
+Initiating Service scan at 23:48
+Scanning 6 services on 10.0.0.48
+Service scan Timing: About 50.00% done; ETC: 23:53 (0:02:21 remaining)
+Completed Service scan at 23:51, 146.12s elapsed (6 services on 1 host)
+NSE: Script scanning 10.0.0.48.
+Initiating NSE at 23:51
+Completed NSE at 23:53, 134.45s elapsed
+Initiating NSE at 23:53
+Completed NSE at 23:53, 1.01s elapsed
+Nmap scan report for 10.0.0.48
+Host is up (0.0013s latency).
+Not shown: 993 filtered ports
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+80/tcp  open   http     Apache httpd
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+110/tcp open   pop3?
+143/tcp open   imap?
+443/tcp open   ssl/http Apache httpd
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=www.example.com
+| Issuer: commonName=www.example.com
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2015-09-16T10:45:03
+| Not valid after:  2025-09-13T10:45:03
+| MD5:   3c16 3b19 87c3 42ad 6634 c1c9 d0aa fb97
+|_SHA-1: ef0c 5fa5 931a 09a5 687c a2c2 80c4 c792 07ce f71b
+993/tcp open   imaps?
+995/tcp open   pop3s?
+
+NSE: Script Post-scanning.
+Initiating NSE at 23:53
+Completed NSE at 23:53, 0.00s elapsed
+Initiating NSE at 23:53
+Completed NSE at 23:53, 0.00s elapsed
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 293.86 seconds

@@ -1,0 +1,207 @@
+wpscan --url http://10.0.0.48 --enumerate p
+_______________________________________________________________
+        __          _______   _____                  
+        \ \        / /  __ \ / ____|                 
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \ 
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team 
+                       Version 2.9.2
+          Sponsored by Sucuri - https://sucuri.net
+   @_WPScan_, @ethicalhack3r, @erwan_lr, pvdl, @_FireFart_
+_______________________________________________________________
+
+[i] It seems like you have not updated the database for some time.
+[+] URL: http://10.0.0.48/now? [Y]es [N]o [A]bort, default: [N]
+[+] Started: Sun Apr  9 18:52:08 2017
+
+[+] robots.txt available under: 'http://10.0.0.48/robots.txt'
+[!] The WordPress 'http://10.0.0.48/readme.html' file exists exposing a version number
+[+] Interesting header: SERVER: Apache
+[+] Interesting header: X-FRAME-OPTIONS: SAMEORIGIN
+[+] Interesting header: X-MOD-PAGESPEED: 1.9.32.3-4523
+[+] XML-RPC Interface available under: http://10.0.0.48/xmlrpc.php
+
+[+] WordPress version 4.3.11 
+
+[+] Enumerating installed plugins (only ones marked as popular) ...
+
+   Time: 00:01:27 <============================================================================================================================> (1000 / 1000) 100.00% Time: 00:01:27
+
+[+] We found 10 plugins:
+
+[+] Name: akismet
+ |  Latest version: 3.2 
+ |  Location: http://10.0.0.48/wp-content/plugins/akismet/
+
+[!] We could not determine a version so all vulnerabilities are printed out
+
+[!] Title: Akismet 2.5.0-3.1.4 - Unauthenticated Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8215
+    Reference: http://blog.akismet.com/2015/10/13/akismet-3-1-5-wordpress/
+    Reference: https://blog.sucuri.net/2015/10/security-advisory-stored-xss-in-akismet-wordpress-plugin.html
+[i] Fixed in: 3.1.5
+
+[+] Name: all-in-one-seo-pack - v2.0.4
+ |  Location: http://10.0.0.48/wp-content/plugins/all-in-one-seo-pack/
+ |  Readme: http://10.0.0.48/wp-content/plugins/all-in-one-seo-pack/readme.txt
+[!] The version is out of date, the latest version is 2.3.11.4
+
+[!] Title: All in One SEO Pack <= 2.1.5 - aioseop_functions.php new_meta Parameter XSS
+    Reference: https://wpvulndb.com/vulnerabilities/6888
+    Reference: http://blog.sucuri.net/2014/05/vulnerability-found-in-the-all-in-one-seo-pack-wordpress-plugin.html
+[i] Fixed in: 2.1.6
+
+[!] Title: All in One SEO Pack <= 2.1.5 - Unspecified Privilege Escalation
+    Reference: https://wpvulndb.com/vulnerabilities/6889
+    Reference: http://blog.sucuri.net/2014/05/vulnerability-found-in-the-all-in-one-seo-pack-wordpress-plugin.html
+[i] Fixed in: 2.1.6
+
+[!] Title: All in One SEO Pack <= 2.2.5.1 - Information Disclosure
+    Reference: https://wpvulndb.com/vulnerabilities/7881
+    Reference: http://jvn.jp/en/jp/JVN75615300/index.html
+    Reference: http://semperfiwebdesign.com/blog/all-in-one-seo-pack/all-in-one-seo-pack-release-history/
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0902
+[i] Fixed in: 2.2.6
+
+[!] Title: All in One SEO Pack <= 2.2.6.1 - Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7916
+    Reference: https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+[i] Fixed in: 2.2.6.2
+
+[!] Title: All in One SEO Pack <= 2.3.6.1 - Unauthenticated Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8538
+    Reference: http://seclists.org/fulldisclosure/2016/Jul/23
+    Reference: https://semperfiwebdesign.com/blog/all-in-one-seo-pack/all-in-one-seo-pack-release-history/
+    Reference: https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_in_all_in_one_seo_pack_wordpress_plugin.html
+    Reference: https://wptavern.com/all-in-one-seo-2-3-7-patches-persistent-xss-vulnerability
+    Reference: https://www.wordfence.com/blog/2016/07/xss-vulnerability-all-in-one-seo-pack-plugin/
+[i] Fixed in: 2.3.7
+
+[!] Title: All in One SEO Pack <= 2.3.7 -  Unauthenticated Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8558
+    Reference: https://www.wordfence.com/blog/2016/07/new-xss-vulnerability-all-in-one-seo-pack/
+    Reference: https://semperfiwebdesign.com/blog/all-in-one-seo-pack/all-in-one-seo-pack-release-history/
+[i] Fixed in: 2.3.8
+
+[+] Name: all-in-one-wp-migration - v2.0.4
+ |  Location: http://10.0.0.48/wp-content/plugins/all-in-one-wp-migration/
+ |  Readme: http://10.0.0.48/wp-content/plugins/all-in-one-wp-migration/readme.txt
+[!] The version is out of date, the latest version is 6.40
+
+[!] Title: All-in-One WP Migration <= 2.0.4 - Unauthenticated Database Export
+    Reference: https://wpvulndb.com/vulnerabilities/7857
+    Reference: http://www.pritect.net/blog/all-in-one-wp-migration-2-0-4-security-vulnerability
+    Reference: https://www.rapid7.com/db/modules/auxiliary/gather/wp_all_in_one_migration_export
+[i] Fixed in: 2.0.5
+
+[+] Name: contact-form-7 - v4.1
+ |  Location: http://10.0.0.48/wp-content/plugins/contact-form-7/
+ |  Readme: http://10.0.0.48/wp-content/plugins/contact-form-7/readme.txt
+[!] The version is out of date, the latest version is 4.6.1
+
+[+] Name: google-analytics-for-wordpress - v5.3.2
+ |  Location: http://10.0.0.48/wp-content/plugins/google-analytics-for-wordpress/
+ |  Readme: http://10.0.0.48/wp-content/plugins/google-analytics-for-wordpress/readme.txt
+[!] The version is out of date, the latest version is 6.0.4
+
+[!] Title: Google Analytics by Yoast <= 5.3.2 - Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7838
+    Reference: http://packetstormsecurity.com/files/130716/
+[i] Fixed in: 5.3.3
+
+[!] Title: Google Analytics by Yoast <= 5.3.2 - Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7856
+    Reference: https://yoast.com/ga-plugin-security-update-more/
+    Reference: http://klikki.fi/adv/yoast_analytics.html
+    Reference: http://packetstormsecurity.com/files/130935/
+[i] Fixed in: 5.3.3
+
+[!] Title: Google Analytics by Yoast <= 5.3.3 - Unauthenticated Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7914
+    Reference: https://yoast.com/coordinated-security-release/
+    Reference: https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+    Reference: http://klikki.fi/adv/yoast_analytics2.html
+[i] Fixed in: 5.4
+
+[!] Title: Google Analytics by Yoast <= 5.4.4 - Authenticated Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8147
+    Reference: https://security.dxw.com/advisories/xss-in-google-analytics-by-yoast-premium-by-privileged-users/
+[i] Fixed in: 5.4.5
+
+[+] Name: google-sitemap-generator - v4.0.7.1
+ |  Location: http://10.0.0.48/wp-content/plugins/google-sitemap-generator/
+ |  Readme: http://10.0.0.48/wp-content/plugins/google-sitemap-generator/readme.txt
+[!] The version is out of date, the latest version is 4.0.8
+
+[+] Name: jetpack - v3.3.2
+ |  Location: http://10.0.0.48/wp-content/plugins/jetpack/
+ |  Readme: http://10.0.0.48/wp-content/plugins/jetpack/readme.txt
+[!] The version is out of date, the latest version is 4.6
+
+[!] Title: Jetpack 3.0-3.4.2 - Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7915
+    Reference: https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+    Reference: https://jetpack.me/2015/04/20/jetpack-3-4-3-coordinated-security-update/
+[i] Fixed in: 3.4.3
+
+[!] Title: Jetpack <= 3.5.2 - Unauthenticated DOM Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7964
+    Reference: https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html
+[i] Fixed in: 3.5.3
+
+[!] Title: Jetpack <= 3.7.0 - Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8201
+    Reference: https://jetpack.me/2015/09/30/jetpack-3-7-1-and-3-7-2-security-and-maintenance-releases/
+    Reference: https://blog.sucuri.net/2015/10/security-advisory-stored-xss-in-jetpack.html
+[i] Fixed in: 3.7.1
+
+[!] Title: Jetpack <= 3.7.0 - Information Disclosure
+    Reference: https://wpvulndb.com/vulnerabilities/8202
+    Reference: https://jetpack.me/2015/09/30/jetpack-3-7-1-and-3-7-2-security-and-maintenance-releases/
+[i] Fixed in: 3.7.1
+
+[!] Title: Jetpack <= 3.9.1 - LaTeX HTML Element XSS
+    Reference: https://wpvulndb.com/vulnerabilities/8472
+    Reference: https://jetpack.com/2016/02/25/jetpack-3-9-2-maintenance-and-security-release/
+    Reference: https://github.com/Automattic/jetpack/commit/dbc33b9105c4dbb0de81544e682a8b6d5ab7e446
+[i] Fixed in: 3.9.2
+
+[!] Title: Jetpack 2.0-4.0.2 - Shortcode Stored Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8500
+    Reference: https://jetpack.com/2016/05/27/jetpack-4-0-3-critical-security-update/
+    Reference: http://wptavern.com/jetpack-4-0-3-patches-a-critical-xss-vulnerability
+    Reference: https://blog.sucuri.net/2016/05/security-advisory-stored-xss-jetpack-2.html
+[i] Fixed in: 4.0.3
+
+[!] Title: Jetpack <= 4.0.3 - Multiple Vulnerabilities
+    Reference: https://wpvulndb.com/vulnerabilities/8517
+    Reference: https://jetpack.com/2016/06/20/jetpack-4-0-4-bug-fixes/
+[i] Fixed in: 4.0.4
+
+[+] Name: simple-tags - v2.4.1
+ |  Location: http://10.0.0.48/wp-content/plugins/simple-tags/
+ |  Readme: http://10.0.0.48/wp-content/plugins/simple-tags/readme.txt
+[!] The version is out of date, the latest version is 2.4.6
+
+[+] Name: wp-mail-smtp - v0.9.5
+ |  Location: http://10.0.0.48/wp-content/plugins/wp-mail-smtp/
+ |  Readme: http://10.0.0.48/wp-content/plugins/wp-mail-smtp/readme.txt
+[!] The version is out of date, the latest version is 0.10.1
+
+[+] Name: wptouch - v3.7.3
+ |  Location: http://10.0.0.48/wp-content/plugins/wptouch/
+ |  Readme: http://10.0.0.48/wp-content/plugins/wptouch/readme.txt
+[!] The version is out of date, the latest version is 4.3.12
+
+[!] Title: WPtouch Mobile Plugin <= 3.7.5.3 - Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7920
+    Reference: https://blog.sucuri.net/2015/04/security-advisory-xss-vulnerability-affecting-multiple-wordpress-plugins.html
+[i] Fixed in: 3.7.6
+
+[+] Finished: Sun Apr  9 18:53:57 2017
+[+] Requests Done: 1091
+[+] Memory used: 83.59 MB
+[+] Elapsed time: 00:01:49

